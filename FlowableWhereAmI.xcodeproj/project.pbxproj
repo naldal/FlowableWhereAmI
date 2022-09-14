@@ -10,9 +10,14 @@
 		DAABC74828D22AD300D97F8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABC74728D22AD300D97F8D /* AppDelegate.swift */; };
 		DAABC74A28D22AD300D97F8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABC74928D22AD300D97F8D /* SceneDelegate.swift */; };
 		DAABC74C28D22AD300D97F8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABC74B28D22AD300D97F8D /* ViewController.swift */; };
-		DAABC74F28D22AD300D97F8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAABC74D28D22AD300D97F8D /* Main.storyboard */; };
 		DAABC75128D22AD400D97F8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAABC75028D22AD400D97F8D /* Assets.xcassets */; };
 		DAABC75428D22AD400D97F8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAABC75228D22AD400D97F8D /* LaunchScreen.storyboard */; };
+		DAABC75D28D22B5700D97F8D /* RxFlow in Frameworks */ = {isa = PBXBuildFile; productRef = DAABC75C28D22B5700D97F8D /* RxFlow */; };
+		DAABC76028D22D1B00D97F8D /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABC75F28D22D1B00D97F8D /* AppFlow.swift */; };
+		DAABC76228D22D8600D97F8D /* AppSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABC76128D22D8600D97F8D /* AppSteps.swift */; };
+		DAABC76528D22E1F00D97F8D /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABC76428D22E1F00D97F8D /* AppStepper.swift */; };
+		DAABC76728D22F8D00D97F8D /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABC76628D22F8D00D97F8D /* MainFlow.swift */; };
+		DAABC76A28D232A000D97F8D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAABC76928D232A000D97F8D /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +25,14 @@
 		DAABC74728D22AD300D97F8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAABC74928D22AD300D97F8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DAABC74B28D22AD300D97F8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DAABC74E28D22AD300D97F8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAABC75028D22AD400D97F8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAABC75328D22AD400D97F8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAABC75528D22AD400D97F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAABC75F28D22D1B00D97F8D /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		DAABC76128D22D8600D97F8D /* AppSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSteps.swift; sourceTree = "<group>"; };
+		DAABC76428D22E1F00D97F8D /* AppStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStepper.swift; sourceTree = "<group>"; };
+		DAABC76628D22F8D00D97F8D /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
+		DAABC76928D232A000D97F8D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAABC75D28D22B5700D97F8D /* RxFlow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,43 @@
 		DAABC74628D22AD300D97F8D /* FlowableWhereAmI */ = {
 			isa = PBXGroup;
 			children = (
+				DAABC76828D2329400D97F8D /* Features */,
+				DAABC76328D22E1200D97F8D /* Steps */,
+				DAABC75E28D22D0E00D97F8D /* Flows */,
 				DAABC74728D22AD300D97F8D /* AppDelegate.swift */,
 				DAABC74928D22AD300D97F8D /* SceneDelegate.swift */,
 				DAABC74B28D22AD300D97F8D /* ViewController.swift */,
-				DAABC74D28D22AD300D97F8D /* Main.storyboard */,
 				DAABC75028D22AD400D97F8D /* Assets.xcassets */,
 				DAABC75228D22AD400D97F8D /* LaunchScreen.storyboard */,
 				DAABC75528D22AD400D97F8D /* Info.plist */,
 			);
 			path = FlowableWhereAmI;
+			sourceTree = "<group>";
+		};
+		DAABC75E28D22D0E00D97F8D /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				DAABC75F28D22D1B00D97F8D /* AppFlow.swift */,
+				DAABC76628D22F8D00D97F8D /* MainFlow.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		DAABC76328D22E1200D97F8D /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				DAABC76128D22D8600D97F8D /* AppSteps.swift */,
+				DAABC76428D22E1F00D97F8D /* AppStepper.swift */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		DAABC76828D2329400D97F8D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				DAABC76928D232A000D97F8D /* MainViewModel.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +121,9 @@
 			dependencies = (
 			);
 			name = FlowableWhereAmI;
+			packageProductDependencies = (
+				DAABC75C28D22B5700D97F8D /* RxFlow */,
+			);
 			productName = FlowableWhereAmI;
 			productReference = DAABC74428D22AD300D97F8D /* FlowableWhereAmI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,9 @@
 				Base,
 			);
 			mainGroup = DAABC73B28D22AD300D97F8D;
+			packageReferences = (
+				DAABC75B28D22B5700D97F8D /* XCRemoteSwiftPackageReference "RxFlow" */,
+			);
 			productRefGroup = DAABC74528D22AD300D97F8D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +171,6 @@
 			files = (
 				DAABC75428D22AD400D97F8D /* LaunchScreen.storyboard in Resources */,
 				DAABC75128D22AD400D97F8D /* Assets.xcassets in Resources */,
-				DAABC74F28D22AD300D97F8D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +182,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAABC74C28D22AD300D97F8D /* ViewController.swift in Sources */,
+				DAABC76228D22D8600D97F8D /* AppSteps.swift in Sources */,
+				DAABC76728D22F8D00D97F8D /* MainFlow.swift in Sources */,
+				DAABC76028D22D1B00D97F8D /* AppFlow.swift in Sources */,
 				DAABC74828D22AD300D97F8D /* AppDelegate.swift in Sources */,
 				DAABC74A28D22AD300D97F8D /* SceneDelegate.swift in Sources */,
+				DAABC76528D22E1F00D97F8D /* AppStepper.swift in Sources */,
+				DAABC76A28D232A000D97F8D /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DAABC74D28D22AD300D97F8D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DAABC74E28D22AD300D97F8D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DAABC75228D22AD400D97F8D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +332,7 @@
 				INFOPLIST_FILE = FlowableWhereAmI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +360,7 @@
 				INFOPLIST_FILE = FlowableWhereAmI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +398,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DAABC75B28D22B5700D97F8D /* XCRemoteSwiftPackageReference "RxFlow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxFlow.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAABC75C28D22B5700D97F8D /* RxFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAABC75B28D22B5700D97F8D /* XCRemoteSwiftPackageReference "RxFlow" */;
+			productName = RxFlow;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DAABC73C28D22AD300D97F8D /* Project object */;
 }
